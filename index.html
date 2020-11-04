@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Engine</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <body class="m-auto text-center">
+        <h1 class="bg-springgreen-500">Speech Engine</h1>
+        <div class="border border-purple m-4" 
+        contenteditable
+        oninput="setText(event)"
+        >Seu texto aqui</div>
+        <button 
+            onclick="speak()" 
+            class="p-10 bg-purple-200 rounded shadow">Falar</button>
+        <button 
+            onclick="stop()" 
+            class="p-10 bg-purple-700 text-white rounded shadow">Parar</button>    
+    </body>
+
+    
+
+
+    <script src="./speech-endine.js"></script>
+</body>
+</html>
